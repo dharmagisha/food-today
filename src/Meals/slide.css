@@ -1,0 +1,15 @@
+.sliderimg img{
+  width: 100px;
+  height: 30px;
+}
+
+.sliderimg{
+    display: flex;
+}
+
+.logo-dark {
+  filter: brightness(0.9); 
+  max-width: 120px;
+  margin: 0 auto;
+  display: block;
+}

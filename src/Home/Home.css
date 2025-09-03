@@ -30,3 +30,17 @@
     inset: 0;
     z-index: 999;
 } 
+
+.search_home{
+     position: absolute;
+    inset: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+}
+
+.centerhead_sec{
+    font-size: 22px;
+}

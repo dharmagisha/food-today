@@ -21,27 +21,28 @@ const Galary = () => {
         }
     ]
   return (
-    <div className='bg-orange-50 py-5'>
-        <div className='w-full pr-3 ps-30'>
+   <section id='galary'>
+     <div className='bg-orange-50 py-5'>
+        <div className='w-full pr-3 ps-14'>
             {gallery.map((gall) => (
-                <div className='grid grid-cols-2 gap-12 items-start'>
-                <div className=' '>
+                <div className='grid grid-cols-2  items-start'>
+                <div className='mt-11 '>
                     <div>
-                        <p className='text-sm font-semibold text-orange-500 uppercase'>{gall.title}</p>
-                        <p className='text-3xl font-bold text-gray-800 mb-4'>{gall.heading}</p>
-                        <p className='w-full'>{gall.description}</p>
+                        <p className=' font-bold text-orange-500 uppercase' style={{fontSize:"12px"}}>{gall.title}</p>
+                        <p className='text-3xl  text-gray-600 mb-6' style={{fontWeight:"600"}}>{gall.heading}</p>
+                        <p className='w-full text-sm text-gray-600' style={{width:"500px"}}>{gall.description}</p>
                     </div>
                 </div>
-                 <div className='grid grid-cols-3 gap-4 w-full'>
+                 <div className='grid grid-cols-3 gap-3 w-full'>
                     {gall.meals.map((mealgal) => (
                         <>
-                        <img src={mealgal.image1} className='rounded-lg object-cover w-full h-60' alt="" />
-                        <img src={mealgal.image2} className='rounded-lg object-cover w-full h-60' alt="" />
-                        <img src={mealgal.image3}className='rounded-lg object-cover w-full h-60' alt="" />
-                        <img src={mealgal.image4} className='rounded-lg object-cover w-full h-60' alt="" />
+                        <img src={mealgal.image1} className='rounded-lg object-cover w-full h-50' alt="" />
+                        <img src={mealgal.image2} className='rounded-lg object-cover w-full h-50' alt="" />
+                        <img src={mealgal.image3}className='rounded-lg object-cover w-full h-50' alt="" />
+                        <img src={mealgal.image4} className='rounded-lg object-cover w-full h-50' alt="" />
                         
-                        <img src={mealgal.image5} className='rounded-lg object-cover w-full h-60' alt="" />
-                        <img src={mealgal.image5} className='rounded-lg object-cover w-full h-60' alt="" />
+                        <img src={mealgal.image5} className='rounded-lg object-cover w-full h-50' alt="" />
+                        <img src={mealgal.image5} className='rounded-lg object-cover w-full h-50' alt="" />
                         </>
                     ))}
                  </div>
@@ -51,6 +52,7 @@ const Galary = () => {
         </div>
       
     </div>
+   </section>
   )
 }
 
