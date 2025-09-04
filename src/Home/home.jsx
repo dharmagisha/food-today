@@ -1,9 +1,11 @@
 import React from "react";
 import "./Home.css";
+import { image } from "../assets/assests";
+import { FaSearch } from "react-icons/fa"
 
 const home = () => {
   const nav = {
-    navleft: "FOODTODAY",
+    navleft: image.Firsthead,
     navright: [
       {
         nav1: "How Works",
@@ -13,12 +15,14 @@ const home = () => {
         signbutton: "Sign Up",
       },
     ],
+    centerhead1:"FOODTODAY",
+    centerhead2:"Discover the best Meals & drinks"
   };
 
   return (
-    <div className="homebg_image ">
+    <div className="homebg_image">
       <div className="flex justify-between text-white right_nav px-11 py-6">
-        <h1>{nav.navleft}</h1>
+        <img src={nav.navleft} className="w-35 h-5" alt="" />
 
         <div >
           {nav.navright.map((rightnav) => (
@@ -32,6 +36,19 @@ const home = () => {
           ))}
         </div>
       </div>
+      <div className="center_head flex flex-col items-center justify-center text-white ">
+        <p className="text-3xl">{nav.centerhead1}</p>
+        <p>{nav.centerhead2}</p>
+         <div className="flex justify-center mt-8">
+        <div className="relative  w-full max-w-2xl">
+          <input type="text" className="w-full bg-white rounded-xl border border-gray-300 py-3 pl-12 pr-4 " />
+         <FaSearch className="absolute left-4 top-1/2 text-gray-500"/> 
+        </div>
+       
+      </div>
+      </div>
+
+     
     </div>
   );
 };
