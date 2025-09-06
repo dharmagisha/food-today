@@ -8,6 +8,8 @@ import Gal2 from '../assets/images/img/gallery/gallery-2.jpg'
 import Gal3 from '../assets/images/img/gallery/gallery-3.jpg'
 import Gal4 from '../assets/images/img/gallery/gallery-4.jpg'
 import Gal5 from '../assets/images/img/gallery/gallery-5.jpg'
+import Eat from '../assets/images/eat.jpg'
+
 
 
 
@@ -23,6 +25,7 @@ export const image = {
     Gal3,
     Gal4,
     Gal5,
-    footer
+    footer,
+    Eat
 
 }

@@ -35,7 +35,7 @@ const Mealsslider2 = () => {
       <Slider {...settings}>
         {logos.map((logo) => (
           <div className="mt-7" style={{ padding: "0 5px" }}>
-            <img  className="logo-dark"
+            <img  className=""
               src={logo}
               style={{ width: "100%", maxWidth: "105px", display: "block", margin: "auto" ,filter:"grayscale(100%)"}}
             />

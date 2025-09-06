@@ -3,6 +3,7 @@
       height: 500px;
       background-size: cover;
       position: relative;
+      /* z-index: 1; */
 }
 
 .homebg_image::after {
@@ -21,20 +22,28 @@
      top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    z-index: 999;
+    z-index: 2;
 }
+
+ /* .right{
+     position: absolute;
+     top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+ } */
 
 .center_head{
     position: absolute;
-    inset: 0;
-    z-index: 999;
+    top: 40%;
+    left: 50%;
+     transform: translate(-50%, -50%);
 } 
 
 .search_home{
      position: absolute;
     inset: 0;
-    z-index: 999;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,4 +52,34 @@
 
 .centerhead_sec{
     font-size: 22px;
+}
+
+#hamburger{
+    display: none;
+}
+
+
+@media (max-width: 1025px){
+    .right{
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        padding: 10px;
+        color: black;
+        z-index: 999;
+    }
+
+    .right.show{
+       display: flex;
+       
+    }
+
+    #hamburger{
+        display: block;
+        font-size: 20px;
+    }
 }

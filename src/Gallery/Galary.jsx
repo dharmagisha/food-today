@@ -21,8 +21,8 @@ const Galary = () => {
         }
     ]
   return (
-   <section id='galary'>
-     <div className='bg-orange-50 py-5'>
+   <section >
+     <div id='gallery' className='bg-orange-50 py-5'>
         <div className='w-full pr-3 ps-14'>
             {gallery.map((gall) => (
                 <div className='grid grid-cols-2  items-start'>

@@ -32,7 +32,7 @@ const Pricing = () => {
     }
 
     return (
-        <div className='py-12 '>
+        <div id='pricing' className='py-12 '>
             <div className='px-65 pb-4'>
                 <h3 className='text-orange-600 font-semibold uppercase ' style={{fontSize:"12px"}}>{pricing.subhead}</h3>
             <h1 className='   text-gray-700 ' style={{fontWeight:"600",fontSize:"34px"}}>{pricing.head}</h1>

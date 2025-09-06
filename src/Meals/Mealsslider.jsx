@@ -54,7 +54,7 @@ const Mealsslider = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToscroll: 1,
+    slidesToScroll: 1,
   };
 
   const handlesee = () => {
@@ -62,7 +62,7 @@ const Mealsslider = () => {
   };
   return (
     <section id="meals">
-      <div className="max-w-4xl mx-auto px-2 py-12">
+      <div  className="max-w-4xl mx-auto px-2 py-12">
         <h1 className="text-sm font-semibold text-orange-500 px-7 font-roboto">
           {subheading}
         </h1>
@@ -73,7 +73,7 @@ const Mealsslider = () => {
         <Slider ref={slideerRef} {...settings}>
           {meals.map((meal) => (
             <div key={meal.id} className="px-7">
-              <div className="bg-white shadow-lg rounded-xl overflow-hidden">
+              <div className="bg-white shadow-lg rounded-xl ">
                 <img
                   src={meal.image}
                   className="w-100 h-46 object-cover"
