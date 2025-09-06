@@ -4,7 +4,6 @@ import { image } from "../assets/assests";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-scroll";
 import Signup from "../Signuppage/Signup";
-import Newsletter from "../Newsletter/Newsletter";
 
 
 const Home = () => {
@@ -53,7 +52,7 @@ const Home = () => {
               <Link to="meals" smooth={true} duration={500}>{rightnav.nav2}</Link>
               <Link to="gallery" smooth={true} duration={500}>{rightnav.nav3}</Link>
               <Link to="pricing" smooth={true} duration={500}>{rightnav.nav4}</Link>
-              <button className="w-18 h-8 rounded-lg bg-[#e67e22] flex items-center justify-center" onClick={() => setOpen(true)}>
+              <button className="w-18 h-8 rounded-sm bg-[#e67e22] flex items-center justify-center" onClick={() => setOpen(true)}>
                 {rightnav.signbutton}
               </button>
             </div>
@@ -65,13 +64,13 @@ const Home = () => {
 
       
 
-      <div className="center_head flex flex-col gap-5 items-center justify-center text-white mb-19 text-Oswald font-roboto">
+      <div className="center_head flex flex-col gap-5  items-center justify-center text-white  text-Oswald font-roboto">
             <p className="text-5xl" style={{ fontFamily: "font-name" }}>
               F<span style={{ color: "#e67e22" }}>OO</span>DTODAY
             </p>
             <p className="centerhead_sec">{nav.centerhead2}</p>
           </div>
-          <div className="search_home flex justify-center mt-8">
+          <div className="search_home flex justify-center ">
             <div className="relative w-full max-w-2xl px-4">
               <input
                 type="text"

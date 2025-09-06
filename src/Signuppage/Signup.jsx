@@ -50,43 +50,46 @@ const Signup = ({isopen, close}) => {
     }
 
     return (
-        <div className='fixed inset-0  flex items-center justify-center z-[999]'>
+        <div className='fixed inset-0 bg-black/50  flex items-center justify-center z-[999]'>
             
-            <div className='  justify-center items-center rounded-lg    relative z-[10000] w-[full] h-[340px]'>
-                <div className='bg-[#e67e22]   flex gap-4 h-full w-[700px] rounded-lg'>
-                    <button className='absolute top-4 right-4  text-white' onClick={close}>X</button>
+            <div className='  justify-center items-center rounded-lg    relative z-[10000] w-[full] h-[310px]'>
+                <div className='bg-[#f5943f]   flex gap-4 h-full w-[600px] rounded-lg'>
+                    <button className='absolute top-4 right-4   text-white' onClick={close}>X</button>
                     <div className=' p-6'>
                         {signtext.map((text) => (
-                        <>
+                        < div className='flex flex-col gap-5'>
                             <h1 className='text-3xl font-semibold mb-2'>{text.head}</h1>
-                            <p className='text-sm sign_p'>{text.descrpt}</p>
+                            <p className=' sign_p' style={{fontSize:"14px"}}>{text.descrpt}</p>
 
                             <form onSubmit={submit} className='grid grid-cols-2 gap-3 items-center justify-center'>
                                 <div className='flex flex-col'>
                                     <label htmlFor="" className='label_name'>Enter Name</label>
-                                    <input type="text" placeholder='Enter Name' className='p-2 rounded text-black text-sm bg-white' 
+                                    <input type="text" placeholder='Enter Name' className='p-2  h-8 rounded text-black text-sm bg-white' 
                                     name='name'
                                     value={formData.name}
                                     onChange={handlechge}
                                     required
+                                      style={{fontSize:"12px"}}
                                     />
                                 </div>
-                                <div className='flex flex-col'>
+                                <div className='flex flex-col ms-3'>
                                     <label htmlFor="" className='label_name'>Enter Email</label>
-                                    <input type="text" placeholder='Enter Email' className='p-2 rounded text-black text-sm bg-white'
+                                    <input type="text" placeholder='Enter Email' className='p-2 h-8 rounded text-black text-sm bg-white'
                                     name='email'
                                     value={formData.email}
                                     onChange={handlechge}
                                     required
+                                      style={{fontSize:"12px"}}
                                     />
                                 </div>
 
-                                <div className='flex flex-col'>
+                                <div className='flex flex-col '>
                                     <label htmlFor="" className='label_name'>Select Find Us</label>
-                                    <select className='p-2 rounded text-black text-sm bg-white'
+                                    <select className='p-2 rounded text-black  h-8 text-sm bg-white'
                                     name='findUs'
                                     value={formData.findUs}
                                     onChange={handlechge}
+                                    style={{fontSize:"12px"}}
                                     >
                                         <option >{text.opt1}</option>
                                         <option >{text.opt2}</option>
@@ -95,13 +98,14 @@ const Signup = ({isopen, close}) => {
                                     </select>
                                 </div>
 
-                                <button type='submit' className='bg-orange-900 text-white  px-5 h-7 rounded-xl mt-8'>{text.btn}</button>
+                                <button type='submit' className='bg-[#b15e15] ms-3 text-white w-38  px-5 h-8 rounded-lg mt-6'>{text.btn}</button>
                             </form>
-                        </>
+                        </div>
                     ))}
                     </div>
                      <div className='h-full w-[500px]'>
-                    <img src={image.Eat} className='object-cover rounded-r-lg h-full w-full' alt="" />
+                    <img src={image.Eat} className='object-cover  rounded-r-lg h-full w-full' alt="" />
+                   
                 </div>
                     
                 </div>

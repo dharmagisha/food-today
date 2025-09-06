@@ -14,7 +14,7 @@ import Newsletter from './Newsletter/Newsletter';
 
 
 const App = () => {
-    const [newsopen, setNewsopen] = useState(true);
+    const [newsopen, setNewsopen] = useState(false);
 
     useEffect(() => {
       const hide = localStorage.getItem("hidenews")
